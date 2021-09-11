@@ -1,0 +1,23 @@
+{
+    "RaceAgent": {
+        "checkpoints": [
+            {
+                "steps": 500526,
+                "file_path": "results\\ra-25\\RaceAgent\\RaceAgent-500526.nn",
+                "reward": null,
+                "creation_time": 1630166756.6877735
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500526,
+            "file_path": "results\\ra-25\\RaceAgent.nn",
+            "reward": 7.686486704929455,
+            "creation_time": 1630166467.275436
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.0",
+        "tensorflow_version": "2.3.3"
+    }
+}

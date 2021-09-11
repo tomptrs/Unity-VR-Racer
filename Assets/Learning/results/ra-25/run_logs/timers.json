@@ -1,0 +1,78 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1630166741",
+        "python_version": "3.8.10 (default, May 19 2021, 13:12:57) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "D:\\Anaconda\\envs\\ml-try\\Scripts\\mlagents-learn RaceAgent.yaml --run-id ra-25 --resume",
+        "mlagents_version": "0.21.0",
+        "mlagents_envs_version": "0.21.0",
+        "communication_protocol_version": "1.2.0",
+        "tensorflow_version": "2.3.3",
+        "numpy_version": "1.18.5",
+        "end_time_seconds": "1630166756"
+    },
+    "total": 15.704508599999999,
+    "count": 1,
+    "self": 0.2746075999999995,
+    "children": {
+        "run_training.setup": {
+            "total": 0.0443058999999999,
+            "count": 1,
+            "self": 0.0443058999999999
+        },
+        "TrainerController.start_learning": {
+            "total": 15.3855951,
+            "count": 1,
+            "self": 0.006481700000001922,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 13.912851199999999,
+                    "count": 1,
+                    "self": 13.912851199999999
+                },
+                "trainer_threads": {
+                    "total": 2.040000000036457e-05,
+                    "count": 1,
+                    "self": 2.040000000036457e-05,
+                    "children": {
+                        "thread_root": {
+                            "total": 0.0,
+                            "count": 0,
+                            "is_parallel": true,
+                            "self": 0.0,
+                            "children": {
+                                "trainer_advance": {
+                                    "total": 0.00620879999999957,
+                                    "count": 1,
+                                    "is_parallel": true,
+                                    "self": 7.959999999940237e-05,
+                                    "children": {
+                                        "process_trajectory": {
+                                            "total": 0.006129200000000168,
+                                            "count": 1,
+                                            "is_parallel": true,
+                                            "self": 0.006129200000000168
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 1.4662417999999988,
+                    "count": 1,
+                    "self": 0.0003568999999998823,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 1.465884899999999,
+                            "count": 1,
+                            "self": 1.465884899999999
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
